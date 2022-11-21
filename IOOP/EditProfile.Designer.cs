@@ -177,6 +177,7 @@
             this.txtCPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtCPassword.Location = new System.Drawing.Point(98, 74);
             this.txtCPassword.Name = "txtCPassword";
+            this.txtCPassword.PasswordChar = '*';
             this.txtCPassword.PlaceholderText = "Confirm Password";
             this.txtCPassword.Size = new System.Drawing.Size(224, 23);
             this.txtCPassword.TabIndex = 33;
@@ -196,6 +197,7 @@
             this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtPassword.Location = new System.Drawing.Point(98, 26);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "Enter New Password";
             this.txtPassword.Size = new System.Drawing.Size(224, 23);
             this.txtPassword.TabIndex = 32;
@@ -225,6 +227,7 @@
             this.txtCurrPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtCurrPassword.Location = new System.Drawing.Point(71, 137);
             this.txtCurrPassword.Name = "txtCurrPassword";
+            this.txtCurrPassword.PasswordChar = '*';
             this.txtCurrPassword.PlaceholderText = "Enter Current password to save changes";
             this.txtCurrPassword.Size = new System.Drawing.Size(224, 23);
             this.txtCurrPassword.TabIndex = 34;
