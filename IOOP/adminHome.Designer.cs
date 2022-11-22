@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminHome));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -36,7 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.listBoxStaff = new System.Windows.Forms.ListBox();
             this.btnDel = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,26 +43,29 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(285, 12);
+            this.pictureBox1.Image = global::IOOP_Assignment.Properties.Resources.Sample_User_Icon;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(368, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 36);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(11, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 20);
+            this.label1.Size = new System.Drawing.Size(67, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "ETC";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(214, 52);
+            this.lblName.Location = new System.Drawing.Point(298, 40);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(49, 20);
             this.lblName.TabIndex = 2;
@@ -71,34 +73,36 @@
             // 
             // btnViewReport
             // 
-            this.btnViewReport.Location = new System.Drawing.Point(28, 110);
+            this.btnViewReport.Location = new System.Drawing.Point(17, 65);
             this.btnViewReport.Name = "btnViewReport";
             this.btnViewReport.Size = new System.Drawing.Size(105, 28);
             this.btnViewReport.TabIndex = 4;
             this.btnViewReport.Text = "View Report";
             this.btnViewReport.UseVisualStyleBackColor = true;
+            this.btnViewReport.Click += new System.EventHandler(this.btnViewReport_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(320, 144);
+            this.button3.Location = new System.Drawing.Point(309, 63);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 29);
             this.button3.TabIndex = 5;
             this.button3.Text = "Edit Profile";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listBoxStaff
             // 
             this.listBoxStaff.FormattingEnabled = true;
             this.listBoxStaff.ItemHeight = 20;
-            this.listBoxStaff.Location = new System.Drawing.Point(28, 200);
+            this.listBoxStaff.Location = new System.Drawing.Point(17, 148);
             this.listBoxStaff.Name = "listBoxStaff";
             this.listBoxStaff.Size = new System.Drawing.Size(386, 204);
             this.listBoxStaff.TabIndex = 0;
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(141, 429);
+            this.btnDel.Location = new System.Drawing.Point(129, 368);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(94, 29);
             this.btnDel.TabIndex = 8;
@@ -106,21 +110,21 @@
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
-            // button4
+            // btnAdd
             // 
-            this.button4.Location = new System.Drawing.Point(28, 429);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 29);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAdd.Location = new System.Drawing.Point(17, 368);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(27, 160);
+            this.label3.Location = new System.Drawing.Point(17, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 28);
             this.label3.TabIndex = 9;
@@ -130,7 +134,7 @@
             // 
             this.lblAdmin.AutoSize = true;
             this.lblAdmin.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAdmin.Location = new System.Drawing.Point(193, 12);
+            this.lblAdmin.Location = new System.Drawing.Point(261, 9);
             this.lblAdmin.Name = "lblAdmin";
             this.lblAdmin.Size = new System.Drawing.Size(86, 31);
             this.lblAdmin.TabIndex = 10;
@@ -141,11 +145,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(450, 488);
+            this.ClientSize = new System.Drawing.Size(428, 416);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.listBoxStaff);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnViewReport);
@@ -170,7 +174,7 @@
         private Button button3;
         private ListBox listBoxStaff;
         private Button btnDel;
-        private Button button4;
+        private Button btnAdd;
         private Label label3;
         private Label lblAdmin;
     }

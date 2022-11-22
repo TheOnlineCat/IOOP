@@ -228,6 +228,7 @@
             // 
             // textBox_StudentID
             // 
+            this.textBox_StudentID.AllowDrop = true;
             this.textBox_StudentID.Enabled = false;
             this.textBox_StudentID.Location = new System.Drawing.Point(74, 49);
             this.textBox_StudentID.Name = "textBox_StudentID";

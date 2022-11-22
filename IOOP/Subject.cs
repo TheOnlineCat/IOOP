@@ -26,7 +26,7 @@ namespace IOOP_Assignment
             {
                 _name = name;
                 _chargeRate = GetChargeRate(name);
-                _studentNum = GetStudentNumber(name);
+                _studentNum = CountSubject(name);
             }
         }
 
@@ -98,7 +98,7 @@ namespace IOOP_Assignment
         }
 
 
-        private int GetStudentNumber(string subject)
+        /*private int GetStudentNumber(string subject)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString()))
             {
@@ -109,8 +109,20 @@ namespace IOOP_Assignment
                     return (Convert.ToInt32(cmd.ExecuteScalar().ToString()));
                 }
             }
-        }
+        }*/
 
+        private int CountSubject(string subject)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString()))
+            {
+                con.Open();
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = "Select Count(*) from Students where Subject1 ='" + subject + "' or Subject2 ='" + subject + "'or Subject3 ='" + subject + "'";
+                    return (Convert.ToInt32(cmd.ExecuteScalar().ToString()));
+                }
+            }
+        }
 
     }
 }
