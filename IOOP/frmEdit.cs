@@ -21,11 +21,11 @@ namespace IOOP_Assignment
         {
             InitializeComponent();
             lblOutputName.Text = student.Name;
-            lblIC.Text = student.IC;
+            lblOutputIC.Text = student.IC;
             txtAdd.Text = student.Address;
             txtEmail.Text = student.Email;
             txtContact.Text = student.Contact;
-            lblLvl.Text = student.Level;
+            lblOutputLvl.Text = student.Level;
             lblName_StuID.Text = student.Name + "|" + student.StudentID;
             if (student.GetSubjects() != null)
             {

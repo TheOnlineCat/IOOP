@@ -12,28 +12,24 @@ namespace IOOP_Assignment
 {
     internal class Requests
     {
-        string stuID;
-        string subToChange;
-        string subToChoose;
-        string reason;
-        Student student;
+        private string stuID;
+        //private string subToChange;
+        //private string subToChoose;
+        //private string reason;
+        //private Student student;
         
         
-        public Requests()
-        {
-
-        }
         public Requests(string stuID)
         {
             this.stuID = stuID;
         }
 
-        public Requests(string subToChange, string subToChoose, string reason)
+/*        public Requests(string subToChange, string subToChoose, string reason)
         {
             this.subToChange = subToChange;
             this.subToChoose = subToChoose;
             this.reason = reason;
-        }
+        }*/
 
         public void GetSubToChange(string subToChange, string subToChoose, string reason)
         {

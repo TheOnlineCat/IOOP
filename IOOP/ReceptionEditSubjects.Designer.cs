@@ -138,9 +138,9 @@
             this.label_Enrolled.AutoSize = true;
             this.label_Enrolled.Location = new System.Drawing.Point(173, 57);
             this.label_Enrolled.Name = "label_Enrolled";
-            this.label_Enrolled.Size = new System.Drawing.Size(97, 15);
+            this.label_Enrolled.Size = new System.Drawing.Size(140, 15);
             this.label_Enrolled.TabIndex = 26;
-            this.label_Enrolled.Text = "Enrolled Subjects";
+            this.label_Enrolled.Text = "Current Enrolled Subjects";
             // 
             // groupBox_CheckBox
             // 

@@ -17,9 +17,9 @@ namespace IOOP_Assignment
 
         public frmViewStatus(Student student)
         {
-            this.student= student;
-            lblName_StuID.Text = student.Name + "|" + student.StudentID;
             InitializeComponent();
+            this.student = student;
+            lblName_StuID.Text = student.Name + "|" + student.StudentID;
             Requests ViewReq_Status = new Requests(student.StudentID);
             ViewRequests = ViewReq_Status.ViewReq_Status();
         }
