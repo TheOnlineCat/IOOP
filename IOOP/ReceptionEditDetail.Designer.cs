@@ -242,6 +242,7 @@
             // 
             // textBox_StudentID
             // 
+            this.textBox_StudentID.AllowDrop = true;
             this.textBox_StudentID.Enabled = false;
             this.textBox_StudentID.Location = new System.Drawing.Point(85, 65);
             this.textBox_StudentID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
