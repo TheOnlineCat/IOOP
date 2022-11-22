@@ -39,9 +39,10 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(12, 96);
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotal.Location = new System.Drawing.Point(60, 81);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(98, 20);
+            this.lblTotal.Size = new System.Drawing.Size(139, 28);
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "Total Income:";
             // 
@@ -57,37 +58,40 @@
             // lblView
             // 
             this.lblView.AutoSize = true;
-            this.lblView.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblView.Location = new System.Drawing.Point(12, 27);
+            this.lblView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblView.Location = new System.Drawing.Point(43, 27);
             this.lblView.Name = "lblView";
-            this.lblView.Size = new System.Drawing.Size(74, 25);
+            this.lblView.Size = new System.Drawing.Size(61, 20);
             this.lblView.TabIndex = 2;
             this.lblView.Text = "View by";
             // 
             // lblIncome
             // 
             this.lblIncome.AutoSize = true;
-            this.lblIncome.Location = new System.Drawing.Point(133, 96);
+            this.lblIncome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncome.Location = new System.Drawing.Point(91, 109);
             this.lblIncome.Name = "lblIncome";
-            this.lblIncome.Size = new System.Drawing.Size(58, 20);
+            this.lblIncome.Size = new System.Drawing.Size(80, 28);
             this.lblIncome.TabIndex = 3;
             this.lblIncome.Text = "Income";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 136);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(60, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(144, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Total Student:";
             // 
             // lblStudentNum
             // 
             this.lblStudentNum.AutoSize = true;
-            this.lblStudentNum.Location = new System.Drawing.Point(133, 136);
+            this.lblStudentNum.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStudentNum.Location = new System.Drawing.Point(91, 192);
             this.lblStudentNum.Name = "lblStudentNum";
-            this.lblStudentNum.Size = new System.Drawing.Size(60, 20);
+            this.lblStudentNum.Size = new System.Drawing.Size(84, 28);
             this.lblStudentNum.TabIndex = 5;
             this.lblStudentNum.Text = "number";
             // 
@@ -96,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(232, 200);
+            this.ClientSize = new System.Drawing.Size(268, 258);
             this.Controls.Add(this.lblStudentNum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblIncome);
