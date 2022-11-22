@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceptionReceipt));
             this.label_Logo = new System.Windows.Forms.Label();
             this.label_Username = new System.Windows.Forms.Label();
             this.label_Role = new System.Windows.Forms.Label();
@@ -81,8 +80,8 @@
             // 
             // pictureBox_Account
             // 
-            this.pictureBox_Account.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Account.Image")));
-            this.pictureBox_Account.ImageLocation = "\"Resources/img_UserIcon.png\"";
+            this.pictureBox_Account.Image = global::IOOP_Assignment.Properties.Resources.img_5251621;
+            this.pictureBox_Account.ImageLocation = "";
             this.pictureBox_Account.Location = new System.Drawing.Point(310, 9);
             this.pictureBox_Account.Name = "pictureBox_Account";
             this.pictureBox_Account.Size = new System.Drawing.Size(45, 45);

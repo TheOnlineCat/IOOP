@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceptionHomepage));
             this.groupBox_Manage = new System.Windows.Forms.GroupBox();
             this.label_Subject = new System.Windows.Forms.Label();
             this.listBox_Subject = new System.Windows.Forms.ListBox();
@@ -198,8 +199,8 @@
             // 
             // pictureBox_Student
             // 
-            this.pictureBox_Student.Image = global::IOOP_Assignment.Properties.Resources._121_1215004_graduation_icon_png_image_college_student_icon_png;
-            this.pictureBox_Student.ImageLocation = "\"Resources/img_UserIcon.png\"";
+            this.pictureBox_Student.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Student.Image")));
+            this.pictureBox_Student.ImageLocation = "";
             this.pictureBox_Student.Location = new System.Drawing.Point(31, 86);
             this.pictureBox_Student.Name = "pictureBox_Student";
             this.pictureBox_Student.Size = new System.Drawing.Size(150, 150);
