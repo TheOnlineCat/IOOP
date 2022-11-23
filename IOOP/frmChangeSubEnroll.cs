@@ -25,6 +25,7 @@ namespace IOOP_Assignment
         public frmChangeSubEnrol(Student student)
         {
             InitializeComponent();
+            this.student = student;
             if (student.GetSubjects() != null)
             {
                 foreach (string sub in student.GetSubjects())
@@ -57,13 +58,15 @@ namespace IOOP_Assignment
                 subToChange=cmbSubToChange.Text;
                 subToChoose=cmbSubToChoose.Text;
                 reason=txtReason.Text;
-                if (subToChoose == cmbSubToChange.Items[0] || subToChoose == cmbSubToChange.Items[1] || subToChoose == cmbSubToChange.Items[2] || subToChoose == null || subToChange==null || subToChange ==null && subToChoose==null )
+                if (subToChoose == cmbSubToChange.Items[0].ToString() || subToChoose == cmbSubToChange.Items[1].ToString() || subToChoose == cmbSubToChange.Items[2].ToString() || subToChoose == null || subToChange==null || subToChange ==null && subToChoose==null )
                 {
-                    MessageBox.Show("Subject to be changed should not be the same as subject to be choosen.");
+                    MessageBox.Show("Please choose the subjects accordingly.");
                 }
                 else
                 {
                     subject.GetSubToChange(subToChange, subToChoose, reason);
+                    MessageBox.Show("Subject change request sent.");
+                    Close();
                 }
             }
 
@@ -78,6 +81,11 @@ namespace IOOP_Assignment
         private void cmbSubToChange_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

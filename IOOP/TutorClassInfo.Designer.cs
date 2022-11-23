@@ -55,9 +55,9 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLogo.ForeColor = System.Drawing.Color.Black;
-            this.lblLogo.Location = new System.Drawing.Point(12, 9);
+            this.lblLogo.Location = new System.Drawing.Point(14, 12);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(63, 37);
+            this.lblLogo.Size = new System.Drawing.Size(78, 46);
             this.lblLogo.TabIndex = 0;
             this.lblLogo.Text = "ETC";
             // 
@@ -66,9 +66,9 @@
             this.lblTutor.AutoSize = true;
             this.lblTutor.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTutor.ForeColor = System.Drawing.Color.Black;
-            this.lblTutor.Location = new System.Drawing.Point(481, 8);
+            this.lblTutor.Location = new System.Drawing.Point(550, 11);
             this.lblTutor.Name = "lblTutor";
-            this.lblTutor.Size = new System.Drawing.Size(86, 37);
+            this.lblTutor.Size = new System.Drawing.Size(107, 46);
             this.lblTutor.TabIndex = 1;
             this.lblTutor.Text = "Tutor";
             // 
@@ -77,18 +77,19 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(489, 39);
+            this.lblName.Location = new System.Drawing.Point(559, 52);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(54, 15);
+            this.lblName.Size = new System.Drawing.Size(69, 20);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "$Name$";
             // 
             // btnSList
             // 
             this.btnSList.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSList.Location = new System.Drawing.Point(12, 398);
+            this.btnSList.Location = new System.Drawing.Point(14, 531);
+            this.btnSList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSList.Name = "btnSList";
-            this.btnSList.Size = new System.Drawing.Size(142, 40);
+            this.btnSList.Size = new System.Drawing.Size(162, 53);
             this.btnSList.TabIndex = 4;
             this.btnSList.Text = "View Student List";
             this.btnSList.UseVisualStyleBackColor = false;
@@ -97,9 +98,10 @@
             // btnCInfo
             // 
             this.btnCInfo.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCInfo.Location = new System.Drawing.Point(489, 398);
+            this.btnCInfo.Location = new System.Drawing.Point(559, 531);
+            this.btnCInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCInfo.Name = "btnCInfo";
-            this.btnCInfo.Size = new System.Drawing.Size(141, 40);
+            this.btnCInfo.Size = new System.Drawing.Size(161, 53);
             this.btnCInfo.TabIndex = 4;
             this.btnCInfo.Text = "Update and Delete Class Infromation";
             this.btnCInfo.UseVisualStyleBackColor = false;
@@ -108,9 +110,10 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdate.Location = new System.Drawing.Point(499, 57);
+            this.btnUpdate.Location = new System.Drawing.Point(570, 76);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(114, 25);
+            this.btnUpdate.Size = new System.Drawing.Size(130, 33);
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update Profile";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -119,18 +122,21 @@
             // picTutor
             // 
             this.picTutor.Image = ((System.Drawing.Image)(resources.GetObject("picTutor.Image")));
-            this.picTutor.Location = new System.Drawing.Point(569, 12);
+            this.picTutor.Location = new System.Drawing.Point(650, 16);
+            this.picTutor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picTutor.Name = "picTutor";
-            this.picTutor.Size = new System.Drawing.Size(54, 42);
+            this.picTutor.Size = new System.Drawing.Size(62, 56);
             this.picTutor.TabIndex = 18;
             this.picTutor.TabStop = false;
             // 
             // grpClass
             // 
             this.grpClass.Controls.Add(this.gridClass);
-            this.grpClass.Location = new System.Drawing.Point(10, 79);
+            this.grpClass.Location = new System.Drawing.Point(11, 105);
+            this.grpClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpClass.Name = "grpClass";
-            this.grpClass.Size = new System.Drawing.Size(620, 302);
+            this.grpClass.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpClass.Size = new System.Drawing.Size(709, 403);
             this.grpClass.TabIndex = 19;
             this.grpClass.TabStop = false;
             this.grpClass.Text = "Class Information";
@@ -146,13 +152,15 @@
             this.txtDay,
             this.StartTime,
             this.EndTime});
-            this.gridClass.Location = new System.Drawing.Point(0, 22);
+            this.gridClass.Location = new System.Drawing.Point(0, 29);
+            this.gridClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridClass.Name = "gridClass";
             this.gridClass.ReadOnly = true;
             this.gridClass.RowHeadersWidth = 51;
             this.gridClass.RowTemplate.Height = 25;
-            this.gridClass.Size = new System.Drawing.Size(620, 280);
+            this.gridClass.Size = new System.Drawing.Size(709, 373);
             this.gridClass.TabIndex = 5;
+            this.gridClass.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClass_CellContentClick);
             // 
             // txtTutor
             // 
@@ -160,6 +168,7 @@
             this.txtTutor.MinimumWidth = 6;
             this.txtTutor.Name = "txtTutor";
             this.txtTutor.ReadOnly = true;
+            this.txtTutor.Width = 125;
             // 
             // txtSubject
             // 
@@ -175,41 +184,47 @@
             this.txtDay.MinimumWidth = 6;
             this.txtDay.Name = "txtDay";
             this.txtDay.ReadOnly = true;
+            this.txtDay.Width = 125;
             // 
             // StartTime
             // 
             this.StartTime.HeaderText = "StartTime";
+            this.StartTime.MinimumWidth = 6;
             this.StartTime.Name = "StartTime";
             this.StartTime.ReadOnly = true;
+            this.StartTime.Width = 125;
             // 
             // EndTime
             // 
             this.EndTime.HeaderText = "EndTime";
+            this.EndTime.MinimumWidth = 6;
             this.EndTime.Name = "EndTime";
             this.EndTime.ReadOnly = true;
+            this.EndTime.Width = 125;
             // 
             // lblCRate
             // 
             this.lblCRate.AutoSize = true;
-            this.lblCRate.Location = new System.Drawing.Point(204, 411);
+            this.lblCRate.Location = new System.Drawing.Point(233, 548);
             this.lblCRate.Name = "lblCRate";
-            this.lblCRate.Size = new System.Drawing.Size(132, 15);
+            this.lblCRate.Size = new System.Drawing.Size(166, 20);
             this.lblCRate.TabIndex = 21;
             this.lblCRate.Text = "Charge Rate Of Subject:";
             // 
             // txtCRate
             // 
-            this.txtCRate.Location = new System.Drawing.Point(336, 407);
+            this.txtCRate.Location = new System.Drawing.Point(384, 543);
+            this.txtCRate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCRate.Name = "txtCRate";
-            this.txtCRate.Size = new System.Drawing.Size(100, 23);
+            this.txtCRate.Size = new System.Drawing.Size(114, 27);
             this.txtCRate.TabIndex = 22;
             // 
             // TutorClassInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 454);
+            this.ClientSize = new System.Drawing.Size(734, 605);
             this.Controls.Add(this.txtCRate);
             this.Controls.Add(this.lblCRate);
             this.Controls.Add(this.grpClass);
@@ -220,6 +235,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblTutor);
             this.Controls.Add(this.lblLogo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TutorClassInfo";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picTutor)).EndInit();

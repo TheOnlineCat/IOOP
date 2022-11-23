@@ -74,6 +74,7 @@
             this.lblName_StuID.Size = new System.Drawing.Size(133, 17);
             this.lblName_StuID.TabIndex = 2;
             this.lblName_StuID.Text = "$NAME$ | StudentID";
+            this.lblName_StuID.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblName_StuID.Click += new System.EventHandler(this.lblName_StuID_Click);
             // 
             // picStu
@@ -127,6 +128,7 @@
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // cmbSubToChoose
             // 

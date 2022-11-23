@@ -38,5 +38,10 @@ namespace IOOP_Assignment
         {
             Close();
         }
+
+        private void gridList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

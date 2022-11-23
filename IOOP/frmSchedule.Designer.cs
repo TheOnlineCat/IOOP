@@ -71,6 +71,7 @@
             this.lblName_StuID.Size = new System.Drawing.Size(117, 17);
             this.lblName_StuID.TabIndex = 2;
             this.lblName_StuID.Text = "Name | StudentID";
+            this.lblName_StuID.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblSch
             // 

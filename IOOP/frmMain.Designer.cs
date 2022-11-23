@@ -70,6 +70,7 @@
             this.lblName_StuID.Size = new System.Drawing.Size(133, 17);
             this.lblName_StuID.TabIndex = 2;
             this.lblName_StuID.Text = "$NAME$ | StudentID";
+            this.lblName_StuID.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblName_StuID.Click += new System.EventHandler(this.label3_Click);
             // 
             // grpFunc
