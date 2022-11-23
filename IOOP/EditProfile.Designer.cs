@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfile));
-            this.picTutor = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
@@ -49,28 +47,18 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.grpPass = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picTutor)).BeginInit();
             this.grpClass.SuspendLayout();
             this.grpPass.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // picTutor
-            // 
-            this.picTutor.Image = ((System.Drawing.Image)(resources.GetObject("picTutor.Image")));
-            this.picTutor.Location = new System.Drawing.Point(444, 5);
-            this.picTutor.Name = "picTutor";
-            this.picTutor.Size = new System.Drawing.Size(62, 56);
-            this.picTutor.TabIndex = 24;
-            this.picTutor.TabStop = false;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(145, 9);
+            this.lblTitle.Location = new System.Drawing.Point(166, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(201, 37);
+            this.lblTitle.Size = new System.Drawing.Size(249, 46);
             this.lblTitle.TabIndex = 23;
             this.lblTitle.Text = "Editing Profile";
             // 
@@ -79,9 +67,9 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(379, 46);
+            this.lblName.Location = new System.Drawing.Point(433, 61);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(54, 15);
+            this.lblName.Size = new System.Drawing.Size(69, 20);
             this.lblName.TabIndex = 21;
             this.lblName.Text = "$Name$";
             // 
@@ -90,9 +78,9 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRole.ForeColor = System.Drawing.Color.Black;
-            this.lblRole.Location = new System.Drawing.Point(498, 9);
+            this.lblRole.Location = new System.Drawing.Point(569, 12);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(74, 37);
+            this.lblRole.Size = new System.Drawing.Size(90, 46);
             this.lblRole.TabIndex = 20;
             this.lblRole.Text = "Role";
             // 
@@ -101,9 +89,9 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLogo.ForeColor = System.Drawing.Color.Black;
-            this.lblLogo.Location = new System.Drawing.Point(6, 9);
+            this.lblLogo.Location = new System.Drawing.Point(7, 12);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(63, 37);
+            this.lblLogo.Size = new System.Drawing.Size(78, 46);
             this.lblLogo.TabIndex = 19;
             this.lblLogo.Text = "ETC";
             // 
@@ -114,9 +102,11 @@
             this.grpClass.Controls.Add(this.txtName);
             this.grpClass.Controls.Add(this.lblUsername);
             this.grpClass.Controls.Add(this.lblTName);
-            this.grpClass.Location = new System.Drawing.Point(76, 75);
+            this.grpClass.Location = new System.Drawing.Point(87, 100);
+            this.grpClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpClass.Name = "grpClass";
-            this.grpClass.Size = new System.Drawing.Size(357, 146);
+            this.grpClass.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpClass.Size = new System.Drawing.Size(408, 195);
             this.grpClass.TabIndex = 25;
             this.grpClass.TabStop = false;
             this.grpClass.Text = "User Profile";
@@ -124,9 +114,10 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEdit.Location = new System.Drawing.Point(132, 112);
+            this.btnEdit.Location = new System.Drawing.Point(151, 149);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(93, 22);
+            this.btnEdit.Size = new System.Drawing.Size(106, 29);
             this.btnEdit.TabIndex = 36;
             this.btnEdit.Text = "Edit Password";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -136,10 +127,11 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtUsername.Location = new System.Drawing.Point(98, 77);
+            this.txtUsername.Location = new System.Drawing.Point(112, 103);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(224, 23);
+            this.txtUsername.Size = new System.Drawing.Size(255, 27);
             this.txtUsername.TabIndex = 31;
             this.txtUsername.Text = "$USERNAME$";
             // 
@@ -147,27 +139,28 @@
             // 
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtName.Location = new System.Drawing.Point(98, 31);
+            this.txtName.Location = new System.Drawing.Point(112, 41);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(224, 23);
+            this.txtName.Size = new System.Drawing.Size(255, 27);
             this.txtName.TabIndex = 30;
             this.txtName.Text = "$NAME$";
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(29, 80);
+            this.lblUsername.Location = new System.Drawing.Point(33, 107);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(63, 15);
+            this.lblUsername.Size = new System.Drawing.Size(78, 20);
             this.lblUsername.TabIndex = 27;
             this.lblUsername.Text = "Username:";
             // 
             // lblTName
             // 
             this.lblTName.AutoSize = true;
-            this.lblTName.Location = new System.Drawing.Point(50, 34);
+            this.lblTName.Location = new System.Drawing.Point(57, 45);
             this.lblTName.Name = "lblTName";
-            this.lblTName.Size = new System.Drawing.Size(42, 15);
+            this.lblTName.Size = new System.Drawing.Size(52, 20);
             this.lblTName.TabIndex = 26;
             this.lblTName.Text = "Name:";
             // 
@@ -175,18 +168,20 @@
             // 
             this.txtCPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtCPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtCPassword.Location = new System.Drawing.Point(98, 74);
+            this.txtCPassword.Location = new System.Drawing.Point(112, 99);
+            this.txtCPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCPassword.Name = "txtCPassword";
+            this.txtCPassword.PasswordChar = '*';
             this.txtCPassword.PlaceholderText = "Confirm Password";
-            this.txtCPassword.Size = new System.Drawing.Size(224, 23);
+            this.txtCPassword.Size = new System.Drawing.Size(255, 27);
             this.txtCPassword.TabIndex = 33;
             // 
             // lblCPassword
             // 
             this.lblCPassword.AutoSize = true;
-            this.lblCPassword.Location = new System.Drawing.Point(21, 72);
+            this.lblCPassword.Location = new System.Drawing.Point(24, 96);
             this.lblCPassword.Name = "lblCPassword";
-            this.lblCPassword.Size = new System.Drawing.Size(60, 30);
+            this.lblCPassword.Size = new System.Drawing.Size(73, 40);
             this.lblCPassword.TabIndex = 29;
             this.lblCPassword.Text = "Confirm\r\nPassword:";
             // 
@@ -194,18 +189,20 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtPassword.Location = new System.Drawing.Point(98, 26);
+            this.txtPassword.Location = new System.Drawing.Point(112, 35);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "Enter New Password";
-            this.txtPassword.Size = new System.Drawing.Size(224, 23);
+            this.txtPassword.Size = new System.Drawing.Size(255, 27);
             this.txtPassword.TabIndex = 32;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(21, 24);
+            this.lblPassword.Location = new System.Drawing.Point(24, 32);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(60, 30);
+            this.lblPassword.Size = new System.Drawing.Size(73, 40);
             this.lblPassword.TabIndex = 28;
             this.lblPassword.Text = "New\r\nPassword:";
             this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
@@ -213,9 +210,9 @@
             // lblCurrent
             // 
             this.lblCurrent.AutoSize = true;
-            this.lblCurrent.Location = new System.Drawing.Point(126, 118);
+            this.lblCurrent.Location = new System.Drawing.Point(144, 157);
             this.lblCurrent.Name = "lblCurrent";
-            this.lblCurrent.Size = new System.Drawing.Size(100, 15);
+            this.lblCurrent.Size = new System.Drawing.Size(122, 20);
             this.lblCurrent.TabIndex = 30;
             this.lblCurrent.Text = "Current Password";
             // 
@@ -223,18 +220,21 @@
             // 
             this.txtCurrPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtCurrPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtCurrPassword.Location = new System.Drawing.Point(71, 137);
+            this.txtCurrPassword.Location = new System.Drawing.Point(81, 183);
+            this.txtCurrPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCurrPassword.Name = "txtCurrPassword";
+            this.txtCurrPassword.PasswordChar = '*';
             this.txtCurrPassword.PlaceholderText = "Enter Current password to save changes";
-            this.txtCurrPassword.Size = new System.Drawing.Size(224, 23);
+            this.txtCurrPassword.Size = new System.Drawing.Size(255, 27);
             this.txtCurrPassword.TabIndex = 34;
             // 
             // btnConfirm
             // 
             this.btnConfirm.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnConfirm.Location = new System.Drawing.Point(379, 444);
+            this.btnConfirm.Location = new System.Drawing.Point(433, 592);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(100, 30);
+            this.btnConfirm.Size = new System.Drawing.Size(114, 40);
             this.btnConfirm.TabIndex = 35;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = false;
@@ -243,9 +243,10 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.Location = new System.Drawing.Point(23, 444);
+            this.btnCancel.Location = new System.Drawing.Point(26, 592);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 30);
+            this.btnCancel.Size = new System.Drawing.Size(114, 40);
             this.btnCancel.TabIndex = 36;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -259,31 +260,32 @@
             this.grpPass.Controls.Add(this.txtCurrPassword);
             this.grpPass.Controls.Add(this.lblCPassword);
             this.grpPass.Controls.Add(this.lblCurrent);
-            this.grpPass.Location = new System.Drawing.Point(76, 236);
+            this.grpPass.Location = new System.Drawing.Point(87, 315);
+            this.grpPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpPass.Name = "grpPass";
-            this.grpPass.Size = new System.Drawing.Size(357, 193);
+            this.grpPass.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpPass.Size = new System.Drawing.Size(408, 257);
             this.grpPass.TabIndex = 37;
             this.grpPass.TabStop = false;
             this.grpPass.Text = "Password";
             // 
             // EditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(510, 485);
+            this.ClientSize = new System.Drawing.Size(583, 647);
             this.Controls.Add(this.grpPass);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.grpClass);
-            this.Controls.Add(this.picTutor);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblLogo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EditProfile";
             this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.picTutor)).EndInit();
             this.grpClass.ResumeLayout(false);
             this.grpClass.PerformLayout();
             this.grpPass.ResumeLayout(false);
@@ -294,8 +296,6 @@
         }
 
         #endregion
-
-        private PictureBox picTutor;
         private Label lblTitle;
         private Label lblName;
         private Label lblRole;

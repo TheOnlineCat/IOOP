@@ -13,6 +13,7 @@ namespace IOOP_Assignment
         private string StudentID;
         private Student student;
         private string username;
+        private string name;
 
         public ReceptionHomepage()
         {
@@ -22,6 +23,7 @@ namespace IOOP_Assignment
         public ReceptionHomepage(string Name, string Username)
         {
             InitializeComponent();
+            name = Name;
             label_Username.Text = Name;
             username = Username;
         }
@@ -163,7 +165,7 @@ namespace IOOP_Assignment
 
         private void button_Profile_Click(object sender, EventArgs e)
         {
-            EditProfile formEditProfile = new EditProfile(Name,username);
+            EditProfile formEditProfile = new EditProfile(name,username);
             formEditProfile.ShowDialog();
         }
     }

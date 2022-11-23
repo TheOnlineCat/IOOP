@@ -64,9 +64,10 @@ namespace IOOP_Assignment
                         MessageBox.Show("Password do not match");
                         return;
                     }
-                MessageBox.Show("Profile updated successfully");
+                MessageBox.Show("Profile updated successfully. Settings applied on next session.");
                 }
             }
+            Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
