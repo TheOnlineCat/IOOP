@@ -32,7 +32,7 @@
             this.cmbBxView = new System.Windows.Forms.ComboBox();
             this.lblView = new System.Windows.Forms.Label();
             this.lblIncome = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblStudent = new System.Windows.Forms.Label();
             this.lblStudentNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -58,10 +58,10 @@
             // lblView
             // 
             this.lblView.AutoSize = true;
-            this.lblView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblView.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblView.Location = new System.Drawing.Point(43, 27);
             this.lblView.Name = "lblView";
-            this.lblView.Size = new System.Drawing.Size(61, 20);
+            this.lblView.Size = new System.Drawing.Size(63, 20);
             this.lblView.TabIndex = 2;
             this.lblView.Text = "View by";
             // 
@@ -75,15 +75,15 @@
             this.lblIncome.TabIndex = 3;
             this.lblIncome.Text = "Income";
             // 
-            // label1
+            // lblStudent
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(60, 155);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 28);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Total Student:";
+            this.lblStudent.AutoSize = true;
+            this.lblStudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStudent.Location = new System.Drawing.Point(60, 155);
+            this.lblStudent.Name = "lblStudent";
+            this.lblStudent.Size = new System.Drawing.Size(144, 28);
+            this.lblStudent.TabIndex = 4;
+            this.lblStudent.Text = "Total Student:";
             // 
             // lblStudentNum
             // 
@@ -102,7 +102,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(268, 258);
             this.Controls.Add(this.lblStudentNum);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblStudent);
             this.Controls.Add(this.lblIncome);
             this.Controls.Add(this.lblView);
             this.Controls.Add(this.cmbBxView);
@@ -121,7 +121,7 @@
         private ComboBox cmbBxView;
         private Label lblView;
         private Label lblIncome;
-        private Label label1;
+        private Label lblStudent;
         private Label lblStudentNum;
     }
 }

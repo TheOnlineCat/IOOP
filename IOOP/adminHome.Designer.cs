@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblETC = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btnViewReport = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEditPro = new System.Windows.Forms.Button();
             this.listBoxStaff = new System.Windows.Forms.ListBox();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblStaff = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,16 +51,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblETC
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(11, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ETC";
+            this.lblETC.AutoSize = true;
+            this.lblETC.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblETC.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblETC.Location = new System.Drawing.Point(11, 7);
+            this.lblETC.Name = "lblETC";
+            this.lblETC.Size = new System.Drawing.Size(67, 41);
+            this.lblETC.TabIndex = 1;
+            this.lblETC.Text = "ETC";
             // 
             // lblName
             // 
@@ -81,15 +81,15 @@
             this.btnViewReport.UseVisualStyleBackColor = true;
             this.btnViewReport.Click += new System.EventHandler(this.btnViewReport_Click);
             // 
-            // button3
+            // btnEditPro
             // 
-            this.button3.Location = new System.Drawing.Point(309, 63);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Edit Profile";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEditPro.Location = new System.Drawing.Point(309, 63);
+            this.btnEditPro.Name = "btnEditPro";
+            this.btnEditPro.Size = new System.Drawing.Size(94, 29);
+            this.btnEditPro.TabIndex = 5;
+            this.btnEditPro.Text = "Edit Profile";
+            this.btnEditPro.UseVisualStyleBackColor = true;
+            this.btnEditPro.Click += new System.EventHandler(this.button3_Click);
             // 
             // listBoxStaff
             // 
@@ -120,15 +120,15 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label3
+            // lblStaff
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(17, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 28);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Staff";
+            this.lblStaff.AutoSize = true;
+            this.lblStaff.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblStaff.Location = new System.Drawing.Point(17, 108);
+            this.lblStaff.Name = "lblStaff";
+            this.lblStaff.Size = new System.Drawing.Size(51, 28);
+            this.lblStaff.TabIndex = 9;
+            this.lblStaff.Text = "Staff";
             // 
             // lblAdmin
             // 
@@ -147,14 +147,14 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(428, 416);
             this.Controls.Add(this.lblAdmin);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblStaff);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.listBoxStaff);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnEditPro);
             this.Controls.Add(this.btnViewReport);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblETC);
             this.Controls.Add(this.pictureBox1);
             this.Name = "adminHome";
             this.Text = "Excellent Tuition Center";
@@ -168,14 +168,14 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label1;
+        private Label lblETC;
         private Label lblName;
         private Button btnViewReport;
-        private Button button3;
+        private Button btnEditPro;
         private ListBox listBoxStaff;
         private Button btnDel;
         private Button btnAdd;
-        private Label label3;
+        private Label lblStaff;
         private Label lblAdmin;
     }
 }

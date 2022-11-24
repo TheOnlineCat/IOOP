@@ -19,6 +19,7 @@ namespace IOOP_Assignment
 
         public frmEdit(Student student)
         {
+            this.student = student;
             InitializeComponent();
             lblOutputName.Text = student.Name;
             lblOutputIC.Text = student.IC;
@@ -71,6 +72,8 @@ namespace IOOP_Assignment
             student.Contact=txtContact.ToString();
 
             student.SaveData();
+            MessageBox.Show("Your data has been updated.");
+            Close();
 
         }
 
@@ -82,6 +85,11 @@ namespace IOOP_Assignment
         private void lblName_StuID_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

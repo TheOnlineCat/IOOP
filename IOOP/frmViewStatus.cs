@@ -18,21 +18,29 @@ namespace IOOP_Assignment
         public frmViewStatus(Student student)
         {
             InitializeComponent();
-            this.student = student;
-            lblName_StuID.Text = student.Name + "|" + student.StudentID;
-            Requests ViewReq_Status = new Requests(student.StudentID);
-            ViewRequests = ViewReq_Status.ViewReq_Status();
+            this.student= student;
+            lblName_StuID.Text = this.student.Name + "|" + this.student.StudentID;
+            
+            
         }
 
         private void frmViewStatus_Load(object sender, EventArgs e)
         {
+            loadList();
+        }
+
+        private void loadList()
+        {
+            Requests ViewReq_Status = new Requests(student.StudentID);
+            ViewRequests = ViewReq_Status.ViewReq_Status();
+            lstRequest.Items.Clear();
             foreach (List<string> s in ViewRequests)
-            { lstRequest.Items.Add(s[0] + s[1]); }
+            { lstRequest.Items.Add(s[0] + " | " + s[1]); }
         }
 
         private void lblName_StuID_Click(object sender, EventArgs e)
         {
-            lblName_StuID.Text = student.Name + "|" + student.StudentID;
+
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
@@ -40,6 +48,8 @@ namespace IOOP_Assignment
             Req = lstRequest.SelectedIndex;
             Requests Stu_Req= new Requests(student.StudentID);
             Stu_Req.DelReq(ViewRequests[Req][0]);
+            MessageBox.Show("Request has been deleted.");
+            loadList();
         }
 
         private void lstRequest_SelectedIndexChanged(object sender, EventArgs e)

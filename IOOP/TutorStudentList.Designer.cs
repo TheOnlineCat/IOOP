@@ -47,18 +47,19 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(220, 9);
+            this.lblTitle.Location = new System.Drawing.Point(251, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(169, 37);
+            this.lblTitle.Size = new System.Drawing.Size(209, 46);
             this.lblTitle.TabIndex = 15;
             this.lblTitle.Text = "Student List";
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdate.Location = new System.Drawing.Point(520, 67);
+            this.btnUpdate.Location = new System.Drawing.Point(594, 89);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(93, 22);
+            this.btnUpdate.Size = new System.Drawing.Size(106, 29);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update Profile";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -68,9 +69,9 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(511, 46);
+            this.lblName.Location = new System.Drawing.Point(584, 61);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(54, 15);
+            this.lblName.Size = new System.Drawing.Size(69, 20);
             this.lblName.TabIndex = 13;
             this.lblName.Text = "$Name$";
             // 
@@ -79,9 +80,9 @@
             this.lblTutor.AutoSize = true;
             this.lblTutor.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTutor.ForeColor = System.Drawing.Color.Black;
-            this.lblTutor.Location = new System.Drawing.Point(499, 9);
+            this.lblTutor.Location = new System.Drawing.Point(570, 12);
             this.lblTutor.Name = "lblTutor";
-            this.lblTutor.Size = new System.Drawing.Size(86, 37);
+            this.lblTutor.Size = new System.Drawing.Size(107, 46);
             this.lblTutor.TabIndex = 12;
             this.lblTutor.Text = "Tutor";
             // 
@@ -90,18 +91,19 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLogo.ForeColor = System.Drawing.Color.Black;
-            this.lblLogo.Location = new System.Drawing.Point(7, 9);
+            this.lblLogo.Location = new System.Drawing.Point(8, 12);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(63, 37);
+            this.lblLogo.Size = new System.Drawing.Size(78, 46);
             this.lblLogo.TabIndex = 11;
             this.lblLogo.Text = "ETC";
             // 
             // picTutor
             // 
             this.picTutor.Image = ((System.Drawing.Image)(resources.GetObject("picTutor.Image")));
-            this.picTutor.Location = new System.Drawing.Point(576, 5);
+            this.picTutor.Location = new System.Drawing.Point(658, 7);
+            this.picTutor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picTutor.Name = "picTutor";
-            this.picTutor.Size = new System.Drawing.Size(62, 56);
+            this.picTutor.Size = new System.Drawing.Size(71, 75);
             this.picTutor.TabIndex = 18;
             this.picTutor.TabStop = false;
             // 
@@ -111,16 +113,20 @@
             this.gridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.gridList.Location = new System.Drawing.Point(115, 111);
+            this.gridList.Location = new System.Drawing.Point(131, 148);
+            this.gridList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridList.Name = "gridList";
             this.gridList.ReadOnly = true;
+            this.gridList.RowHeadersWidth = 51;
             this.gridList.RowTemplate.Height = 25;
-            this.gridList.Size = new System.Drawing.Size(432, 339);
+            this.gridList.Size = new System.Drawing.Size(494, 452);
             this.gridList.TabIndex = 19;
+            this.gridList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridList_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Students enrolled in your class";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 400;
@@ -128,9 +134,10 @@
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBack.Location = new System.Drawing.Point(12, 490);
+            this.btnBack.Location = new System.Drawing.Point(14, 653);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 22);
+            this.btnBack.Size = new System.Drawing.Size(106, 29);
             this.btnBack.TabIndex = 20;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -138,10 +145,10 @@
             // 
             // TutorStudentList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 550);
+            this.ClientSize = new System.Drawing.Size(734, 733);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gridList);
             this.Controls.Add(this.picTutor);
@@ -150,6 +157,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblTutor);
             this.Controls.Add(this.lblLogo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TutorStudentList";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.picTutor)).EndInit();

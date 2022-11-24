@@ -60,13 +60,13 @@
             // 
             // lblName_StuID
             // 
-            this.lblName_StuID.AutoSize = true;
             this.lblName_StuID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName_StuID.Location = new System.Drawing.Point(194, 44);
+            this.lblName_StuID.Location = new System.Drawing.Point(100, 44);
             this.lblName_StuID.Name = "lblName_StuID";
-            this.lblName_StuID.Size = new System.Drawing.Size(133, 17);
+            this.lblName_StuID.Size = new System.Drawing.Size(227, 19);
             this.lblName_StuID.TabIndex = 2;
             this.lblName_StuID.Text = "$NAME$ | StudentID";
+            this.lblName_StuID.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblName_StuID.Click += new System.EventHandler(this.lblName_StuID_Click);
             // 
             // picStu

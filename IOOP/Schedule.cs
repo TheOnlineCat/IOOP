@@ -67,7 +67,7 @@ namespace IOOP_Assignment
         }
 
 
-        public void loadSub(string subject)
+        public void loadSchForEachSub(string subject)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString()))
             {

@@ -15,7 +15,7 @@ namespace IOOP_Assignment
             Schedule subjectSchedule= new Schedule();
             foreach (string subject in student.GetSubjects())
             {
-                subjectSchedule.loadSub(subject);
+                subjectSchedule.loadSchForEachSub(subject);
             }
             for (int i=0;i<subjectSchedule.Subject.Count; i++)
             {
