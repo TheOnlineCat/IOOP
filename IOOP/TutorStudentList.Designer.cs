@@ -68,7 +68,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(511, 46);
+            this.lblName.Location = new System.Drawing.Point(493, 49);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(54, 15);
             this.lblName.TabIndex = 13;
@@ -79,7 +79,7 @@
             this.lblTutor.AutoSize = true;
             this.lblTutor.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTutor.ForeColor = System.Drawing.Color.Black;
-            this.lblTutor.Location = new System.Drawing.Point(499, 9);
+            this.lblTutor.Location = new System.Drawing.Point(479, 9);
             this.lblTutor.Name = "lblTutor";
             this.lblTutor.Size = new System.Drawing.Size(86, 37);
             this.lblTutor.TabIndex = 12;

@@ -11,6 +11,7 @@ namespace IOOP_Assignment
     internal class Schedule
     {
         private string username;
+        private List<int> ID = new List<int>();
         private List<string> subjectName = new List<string>();
         private List<string> day = new List<string>();
         private List<TimeOnly> startTime = new List<TimeOnly>();
@@ -18,11 +19,13 @@ namespace IOOP_Assignment
         private List<string> subject = new List<string>();
         //public List<decimal> charges = new List<decimal>();
 
+        public List<int> Id { get { return ID; } }
         public List<string> SubjectName { get { return subjectName; } }
         public List<string> Day { get { return day; } }
         public List<TimeOnly> StartTime { get { return startTime; } }
         public List<TimeOnly> EndTime { get { return endTime; } }
         public List<string> Subject { get { return subject; } }
+
         public Schedule(string username)
         {
             this.username = username;
@@ -46,6 +49,7 @@ namespace IOOP_Assignment
                     SqlDataReader data = cmd.ExecuteReader();
                     while (data.Read())
                     {
+                        ID.Add(Convert.ToInt32(data["Id"].ToString()));
                         subject.Add(data["Subject"].ToString());
                         day.Add(data["Day"].ToString());
                         startTime.Add(TimeOnly.FromDateTime(Convert.ToDateTime(data["StartTime"].ToString())));

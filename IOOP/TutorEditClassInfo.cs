@@ -56,12 +56,16 @@ namespace IOOP_Assignment
         private void btnDeleteRow_Click(object sender, EventArgs e) //to delete rows from the schedule and the SQL database
         {
             gridList.Rows.RemoveAt(gridList.CurrentCell.RowIndex);
+            if (gridList.CurrentCell.RowIndex > subjects.Id.Count - 1)
+                return;
+            int Id = subjects.Id[gridList.CurrentCell.RowIndex];
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString()))
             {
                 con.Open();
+
                 using (SqlCommand cmd = con.CreateCommand())
                 {                  
-                        cmd.CommandText = "DELETE FROM [Schedule] where Username = '" + username + "'";
+                        cmd.CommandText = "DELETE FROM [Schedule] where Username = '" + username + "' AND Id = '" + Id + "'" ;
                         cmd.ExecuteNonQuery();                
                 }
             }

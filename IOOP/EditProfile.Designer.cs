@@ -90,7 +90,7 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRole.ForeColor = System.Drawing.Color.Black;
-            this.lblRole.Location = new System.Drawing.Point(498, 9);
+            this.lblRole.Location = new System.Drawing.Point(364, 5);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(74, 37);
             this.lblRole.TabIndex = 20;
@@ -149,9 +149,9 @@
             this.txtName.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtName.Location = new System.Drawing.Point(98, 31);
             this.txtName.Name = "txtName";
+            this.txtName.PlaceholderText = "$NAME$";
             this.txtName.Size = new System.Drawing.Size(224, 23);
             this.txtName.TabIndex = 30;
-            this.txtName.Text = "$NAME$";
             // 
             // lblUsername
             // 
