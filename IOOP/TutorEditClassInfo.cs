@@ -108,5 +108,10 @@ namespace IOOP_Assignment
         { 
             Close();
         }
+
+        private void TutorEditClassInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceptionEditSubjects));
             this.label_Logo = new System.Windows.Forms.Label();
             this.label_Username = new System.Windows.Forms.Label();
             this.label_Role = new System.Windows.Forms.Label();
@@ -82,8 +81,8 @@
             // 
             // pictureBox_Account
             // 
-            this.pictureBox_Account.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Account.Image")));
-            this.pictureBox_Account.ImageLocation = "\"Resources/img_UserIcon.png\"";
+            this.pictureBox_Account.Image = global::IOOP_Assignment.Properties.Resources.img_5251621;
+            this.pictureBox_Account.ImageLocation = "";
             this.pictureBox_Account.Location = new System.Drawing.Point(310, 9);
             this.pictureBox_Account.Name = "pictureBox_Account";
             this.pictureBox_Account.Size = new System.Drawing.Size(45, 45);
@@ -138,9 +137,9 @@
             this.label_Enrolled.AutoSize = true;
             this.label_Enrolled.Location = new System.Drawing.Point(173, 57);
             this.label_Enrolled.Name = "label_Enrolled";
-            this.label_Enrolled.Size = new System.Drawing.Size(97, 15);
+            this.label_Enrolled.Size = new System.Drawing.Size(140, 15);
             this.label_Enrolled.TabIndex = 26;
-            this.label_Enrolled.Text = "Enrolled Subjects";
+            this.label_Enrolled.Text = "Current Enrolled Subjects";
             // 
             // groupBox_CheckBox
             // 

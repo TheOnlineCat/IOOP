@@ -8,6 +8,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.AxHost;
 
 namespace IOOP_Assignment
 {
@@ -89,7 +90,7 @@ namespace IOOP_Assignment
                     string name = cmd3.ExecuteScalar().ToString();
                     if (userRole == "admin")
                     {
-                        adminHome adm= new adminHome(name);
+                        adminHome adm= new adminHome(name,username);
                         adm.Show();
                         return (adm);
                     }
@@ -125,11 +126,11 @@ namespace IOOP_Assignment
                 con.Open();
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Select Username from [User] where role='reception' or role='tutor'";
+                    cmd.CommandText = "Select Username,Name,Role from [User] where role='reception' or role='tutor'";
                     SqlDataReader rd = cmd.ExecuteReader();
                     while (rd.Read())
                     {
-                        staff.Add(rd["Username"].ToString());
+                        staff.Add(rd["Username"].ToString() +": " + rd["Name"].ToString() + " (" + rd["Role"].ToString()+")");
                     }
                     rd.Close();
                 }
@@ -137,7 +138,21 @@ namespace IOOP_Assignment
             return staff;
 
         }
-        
-        
+
+        public static void DeleteUser(string userid)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString()))
+            {
+
+                con.Open();
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = "delete from [User] where Username='" + userid + "'";
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+        }
+ 
     }
 }

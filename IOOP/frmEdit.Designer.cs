@@ -75,13 +75,13 @@
             // 
             // lblName_StuID
             // 
-            this.lblName_StuID.AutoSize = true;
             this.lblName_StuID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName_StuID.Location = new System.Drawing.Point(214, 34);
+            this.lblName_StuID.Location = new System.Drawing.Point(145, 34);
             this.lblName_StuID.Name = "lblName_StuID";
-            this.lblName_StuID.Size = new System.Drawing.Size(117, 17);
+            this.lblName_StuID.Size = new System.Drawing.Size(186, 17);
             this.lblName_StuID.TabIndex = 2;
             this.lblName_StuID.Text = "Name | StudentID";
+            this.lblName_StuID.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblName_StuID.Click += new System.EventHandler(this.lblName_StuID_Click);
             // 
             // grpEdit
@@ -129,6 +129,7 @@
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lstSub
             // 

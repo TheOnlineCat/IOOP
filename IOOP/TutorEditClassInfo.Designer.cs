@@ -57,9 +57,9 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(486, 46);
+            this.lblName.Location = new System.Drawing.Point(555, 61);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(54, 15);
+            this.lblName.Size = new System.Drawing.Size(69, 20);
             this.lblName.TabIndex = 7;
             this.lblName.Text = "$Name$";
             // 
@@ -68,9 +68,9 @@
             this.lblTutor.AutoSize = true;
             this.lblTutor.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTutor.ForeColor = System.Drawing.Color.Black;
-            this.lblTutor.Location = new System.Drawing.Point(484, 9);
+            this.lblTutor.Location = new System.Drawing.Point(553, 12);
             this.lblTutor.Name = "lblTutor";
-            this.lblTutor.Size = new System.Drawing.Size(86, 37);
+            this.lblTutor.Size = new System.Drawing.Size(107, 46);
             this.lblTutor.TabIndex = 6;
             this.lblTutor.Text = "Tutor";
             // 
@@ -79,9 +79,9 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLogo.ForeColor = System.Drawing.Color.Black;
-            this.lblLogo.Location = new System.Drawing.Point(12, 9);
+            this.lblLogo.Location = new System.Drawing.Point(14, 12);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(63, 37);
+            this.lblLogo.Size = new System.Drawing.Size(78, 46);
             this.lblLogo.TabIndex = 5;
             this.lblLogo.Text = "ETC";
             // 
@@ -90,9 +90,9 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(196, 9);
+            this.lblTitle.Location = new System.Drawing.Point(224, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(258, 74);
+            this.lblTitle.Size = new System.Drawing.Size(316, 92);
             this.lblTitle.TabIndex = 10;
             this.lblTitle.Text = "Update and Delete\r\n Class Information";
             // 
@@ -107,11 +107,12 @@
             this.txtDay,
             this.StartTime,
             this.EndTime});
-            this.gridList.Location = new System.Drawing.Point(0, 22);
+            this.gridList.Location = new System.Drawing.Point(0, 29);
+            this.gridList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridList.Name = "gridList";
             this.gridList.RowHeadersWidth = 51;
             this.gridList.RowTemplate.Height = 25;
-            this.gridList.Size = new System.Drawing.Size(618, 290);
+            this.gridList.Size = new System.Drawing.Size(706, 387);
             this.gridList.TabIndex = 12;
             // 
             // txtTutor
@@ -120,6 +121,7 @@
             this.txtTutor.MinimumWidth = 6;
             this.txtTutor.Name = "txtTutor";
             this.txtTutor.ReadOnly = true;
+            this.txtTutor.Width = 125;
             // 
             // txtSubject
             // 
@@ -133,16 +135,21 @@
             this.txtDay.HeaderText = "Day";
             this.txtDay.MinimumWidth = 6;
             this.txtDay.Name = "txtDay";
+            this.txtDay.Width = 125;
             // 
             // StartTime
             // 
             this.StartTime.HeaderText = "StartTime";
+            this.StartTime.MinimumWidth = 6;
             this.StartTime.Name = "StartTime";
+            this.StartTime.Width = 125;
             // 
             // EndTime
             // 
             this.EndTime.HeaderText = "EndTime";
+            this.EndTime.MinimumWidth = 6;
             this.EndTime.Name = "EndTime";
+            this.EndTime.Width = 125;
             // 
             // groupBox1
             // 
@@ -152,9 +159,11 @@
             this.groupBox1.Controls.Add(this.btnDeleteRow);
             this.groupBox1.Controls.Add(this.btnAddRow);
             this.groupBox1.Controls.Add(this.gridList);
-            this.groupBox1.Location = new System.Drawing.Point(12, 117);
+            this.groupBox1.Location = new System.Drawing.Point(14, 156);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(618, 361);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(706, 481);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Class Information";
@@ -162,25 +171,25 @@
             // lblCRate
             // 
             this.lblCRate.AutoSize = true;
-            this.lblCRate.Location = new System.Drawing.Point(371, 330);
+            this.lblCRate.Location = new System.Drawing.Point(424, 440);
             this.lblCRate.Name = "lblCRate";
-            this.lblCRate.Size = new System.Drawing.Size(132, 15);
+            this.lblCRate.Size = new System.Drawing.Size(166, 20);
             this.lblCRate.TabIndex = 20;
             this.lblCRate.Text = "Charge Rate Of Subject:";
             // 
             // txtCRate
             // 
-            this.txtCRate.Location = new System.Drawing.Point(506, 326);
+            this.txtCRate.Location = new System.Drawing.Point(578, 435);
+            this.txtCRate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCRate.Name = "txtCRate";
-            this.txtCRate.Size = new System.Drawing.Size(100, 23);
+            this.txtCRate.Size = new System.Drawing.Size(114, 27);
             this.txtCRate.TabIndex = 19;
             // 
             // btnDeleteRow
             // 
-            this.btnDeleteRow.Location = new System.Drawing.Point(109, 326);
-            this.btnDeleteRow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteRow.Location = new System.Drawing.Point(125, 435);
             this.btnDeleteRow.Name = "btnDeleteRow";
-            this.btnDeleteRow.Size = new System.Drawing.Size(82, 22);
+            this.btnDeleteRow.Size = new System.Drawing.Size(94, 29);
             this.btnDeleteRow.TabIndex = 18;
             this.btnDeleteRow.Text = "Delete Row";
             this.btnDeleteRow.UseVisualStyleBackColor = true;
@@ -188,10 +197,9 @@
             // 
             // btnAddRow
             // 
-            this.btnAddRow.Location = new System.Drawing.Point(10, 326);
-            this.btnAddRow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddRow.Location = new System.Drawing.Point(11, 435);
             this.btnAddRow.Name = "btnAddRow";
-            this.btnAddRow.Size = new System.Drawing.Size(82, 22);
+            this.btnAddRow.Size = new System.Drawing.Size(94, 29);
             this.btnAddRow.TabIndex = 17;
             this.btnAddRow.Text = "Add Row";
             this.btnAddRow.UseVisualStyleBackColor = true;
@@ -200,18 +208,20 @@
             // picTutor
             // 
             this.picTutor.Image = ((System.Drawing.Image)(resources.GetObject("picTutor.Image")));
-            this.picTutor.Location = new System.Drawing.Point(570, 9);
+            this.picTutor.Location = new System.Drawing.Point(651, 12);
+            this.picTutor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picTutor.Name = "picTutor";
-            this.picTutor.Size = new System.Drawing.Size(62, 56);
+            this.picTutor.Size = new System.Drawing.Size(71, 75);
             this.picTutor.TabIndex = 17;
             this.picTutor.TabStop = false;
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.Location = new System.Drawing.Point(12, 507);
+            this.btnCancel.Location = new System.Drawing.Point(14, 676);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(93, 22);
+            this.btnCancel.Size = new System.Drawing.Size(106, 29);
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -220,9 +230,10 @@
             // btnConfirm
             // 
             this.btnConfirm.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnConfirm.Location = new System.Drawing.Point(537, 507);
+            this.btnConfirm.Location = new System.Drawing.Point(614, 676);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(93, 22);
+            this.btnConfirm.Size = new System.Drawing.Size(106, 29);
             this.btnConfirm.TabIndex = 19;
             this.btnConfirm.Text = "Confirm Changes";
             this.btnConfirm.UseVisualStyleBackColor = false;
@@ -230,10 +241,10 @@
             // 
             // TutorEditClassInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 550);
+            this.ClientSize = new System.Drawing.Size(734, 733);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.picTutor);
@@ -242,8 +253,10 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblTutor);
             this.Controls.Add(this.lblLogo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TutorEditClassInfo";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.TutorEditClassInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridList)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

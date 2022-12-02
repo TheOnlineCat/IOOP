@@ -12,35 +12,31 @@ namespace IOOP_Assignment
 {
     internal class Requests
     {
-        string stuID;
-        string subToChange;
-        string subToChoose;
-        string reason;
-        Student student;
+        private string stuID;
+        //private string subToChange;
+        //private string subToChoose;
+        //private string reason;
+        //private Student student;
         
         
-        public Requests()
-        {
-
-        }
         public Requests(string stuID)
         {
             this.stuID = stuID;
         }
 
-        public Requests(string subToChange, string subToChoose, string reason)
+/*        public Requests(string subToChange, string subToChoose, string reason)
         {
             this.subToChange = subToChange;
             this.subToChoose = subToChoose;
             this.reason = reason;
-        }
+        }*/
 
         public void GetSubToChange(string subToChange, string subToChoose, string reason)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString());
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("Insert [Requests] set " + "Receipient = " + stuID + "Subject To Choose = '" + subToChoose + "Subject To Change = '" + subToChange + "Reason = " + reason + "Status ='Pending' ", con);
+            SqlCommand cmd = new SqlCommand("Insert into Requests ([Recipient],[SubjectToChoose],[SubjectToChange],[Reason],[Status]) values ('" + stuID + "','" + subToChoose + "','" + subToChange + "','" + reason + "','Pending')", con);
             cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -54,7 +50,7 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbETC"].ToString());
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("Select Subject To Change,Subject To Choose,Status from [Requests] where Recipient = '" + stuID + "'", con);
+            SqlCommand cmd = new SqlCommand("Select SubjectToChange,SubjectToChoose,Status from [Requests] where Recipient = '" + stuID + "'", con);
             SqlDataReader reader = cmd.ExecuteReader();
             
             while (reader.Read())
@@ -76,7 +72,7 @@ namespace IOOP_Assignment
             string subjectToChoose;
             subjectToChange = request.Split(" To ")[0];
             subjectToChoose=request.Split(" To ")[1];
-            SqlCommand cmd = new SqlCommand("Delete Subject To Change,Subject To Choose,Status from [Requests] where Recipient = '" + stuID + " and Subject To Change = '" + subjectToChange + "' and Subject To Choose = '" + subjectToChoose + "'", con);
+            SqlCommand cmd = new SqlCommand("Delete from [Requests] where Recipient = '" + stuID + "' and SubjectToChange = '" + subjectToChange + "' and SubjectToChoose = '" + subjectToChoose + "'", con);
             cmd.ExecuteNonQuery();
             con.Close();
         }
