@@ -103,6 +103,16 @@ namespace IOOP_Assignment
                     txtBxStaffID.Text = NewID;
                 }
             }
+
+            cmbBxSubject.Items.Clear();
+
+            if (Subject.GetExistingSubjects() != null)
+            {
+                foreach (string subj in Subject.GetExistingSubjects())
+                {
+                    if (subj != null) cmbBxSubject.Items.Add(subj);
+                }
+            }
         }
     }
 }
