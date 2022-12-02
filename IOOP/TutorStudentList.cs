@@ -14,7 +14,7 @@ namespace IOOP_Assignment
     public partial class TutorStudentList : Form
     {
         private Tutor tutor;
-        public TutorStudentList(string username) //parameters passed by User.cs to ge the username of tutors
+        public TutorStudentList(string username) //parameters passed by User.cs to get the username of tutors
         {
             InitializeComponent();
             lblName.Text = username;

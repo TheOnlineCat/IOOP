@@ -74,7 +74,7 @@ namespace IOOP_Assignment
         private void btnConfirm_Click(object sender, EventArgs e) 
         {        
             decimal charges;
-            if ( decimal.TryParse(txtCRate.Text.ToString(), out charges) == false) 
+            if (decimal.TryParse(txtCRate.Text.ToString(), out charges) == false) 
             {
                 MessageBox.Show("Enter a Valid Price for Charge Rate", "Price Error", MessageBoxButtons.OK);
                 return;

@@ -63,10 +63,5 @@ namespace IOOP_Assignment
             this.Hide();
             s.FormClosed += child_FormClosed;
         }
-
-        private void gridClass_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
